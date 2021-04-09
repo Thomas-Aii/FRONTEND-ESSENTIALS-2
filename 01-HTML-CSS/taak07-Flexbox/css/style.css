@@ -30,15 +30,58 @@
 /* TIP: Laat bovenstaande code staan */
 
 /* dobbelsteen1 */
-
+.dobbelsteen1{
+    align-items: center;
+    justify-content: center;
+}
 /* dobbelsteen2 */
-
+.dobbelsteen2 .rechts{
+    padding-top: 70px;
+    padding-left: 30px;
+}
 /* dobbelsteen3 */
-
+.dobbelsteen3 .midden{
+    padding-top: 35px;
+}
+.dobbelsteen3 .rechts{
+    padding-top: 70px;
+}
 /* dobbelsteen4 */
-
+.dobbelsteen4 .links{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;  
+}
+.dobbelsteen4 .rechts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 35px;
+}
 /* dobbelsteen5 */
-
+.dobbelsteen5 .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dobbelsteen5 .midden{
+    padding-top: 35px;
+}
+.dobbelsteen5 .rechts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /* dobbelsteen6 */
-
+.dobbelsteen6 .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dobbelsteen6 .rechts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 35px;
+}
 
