@@ -13,7 +13,6 @@ function OK(){
         console.log("dan niet");
     }
 }
-console.log(strNaam);
 Welkom();
-Naam();
+console.log(Naam());
 OK();
