@@ -32,4 +32,17 @@ document.querySelector(".film9-naam").innerHTML = topFilms[8];
 document.querySelector(".film10-ranking").innerHTML = 10;
 document.querySelector(".film10-naam").innerHTML = topFilms[9];
 
-
+function kiesFavorieteFilm(){
+    antwoord = prompt("Zet hier het nummer van je favorite film!");
+    if(antwoord < 0 || antwoord > 10){
+        alert("Dit getal is te groot.")
+        return false;
+    }
+    else if(antwoord === null){
+        return false;
+    }    
+    document.querySelector(".film"+antwoord+"-naam").style.backgroundColor = "blue";
+    document.querySelector(".film"+antwoord+"-naam").style.color = "white";
+    naam = document.querySelector(".film" + antwoord + "-naam").innerHTML;
+    console.log(naam);
+}

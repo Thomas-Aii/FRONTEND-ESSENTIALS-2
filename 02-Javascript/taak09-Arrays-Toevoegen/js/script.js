@@ -18,6 +18,26 @@ for(i = 0; i < topFilms.length; i++){
     document.querySelector(".imdb-film" + (i+1)).innerHTML = topFilms[i];
 }
 
-function kiesFilm(){
+var filmnummer = 1;
 
+function kiesFilm(){
+    antwoord= prompt("welke film staat voor jou op " + filmnummer);
+    if(antwoord>=0&& antwoord<=10){
+        eigenTopFilms.push(topFilms[antwoord]);
+        naam = document.querySelector(".imdb-film"+antwoord).innerHTML;
+        let toegevoegd1 = document.querySelector(".eigenfilm" + filmnummer);
+        toegevoegd1.innerHTML=naam;
+        console.log(naam);
+ 
+        document.querySelector(".imdb-film" + antwoord).style.tekstDecoration= "line-through";
+        document.querySelector(".imdb-film" + antwoord).style.color= "red";
+
+        filmnummer ++;
+        if(filmnummer >=4){
+            document.querySelector(".kiesfilm-button").innertekst= "Klaar";
+        }
+        else{
+            document.querySelector("kiesfilm-button").innertekst= "Kies film voor plek" + filmnummer;
+        }
+    }
 }
