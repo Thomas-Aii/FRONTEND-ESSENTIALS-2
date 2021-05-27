@@ -1,4 +1,4 @@
-topFilms = [
+topFilm = [
     "The Godfather",
     "The Shawshank Redemption",
     "Schindler's List",
@@ -16,3 +16,7 @@ document.querySelector(".film4-ranking").innerHTML = 4;
 document.querySelector(".film4-naam").innerHTML = topFilms[3];
 document.querySelector(".film5-ranking").innerHTML = 5;
 document.querySelector(".film5-naam").innerHTML = topFilms[4];
+
+function moveup(){
+    
+}
