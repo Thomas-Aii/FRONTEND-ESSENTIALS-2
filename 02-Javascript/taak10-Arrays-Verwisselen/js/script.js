@@ -1,4 +1,4 @@
-topFilm = [
+topFilms = [
     "The Godfather",
     "The Shawshank Redemption",
     "Schindler's List",
@@ -17,6 +17,13 @@ document.querySelector(".film4-naam").innerHTML = topFilms[3];
 document.querySelector(".film5-ranking").innerHTML = 5;
 document.querySelector(".film5-naam").innerHTML = topFilms[4];
 
-function moveup(){
-    
+function moveup(getal){
+    document.querySelector(".film1-naam").innerHTML = topFilms[1];
+    document.querySelector(".film2-naam").innerHTML = topFilms[0];
+}
+function movedown(getal){
+
+}
+function resetlist(getal){
+
 }
